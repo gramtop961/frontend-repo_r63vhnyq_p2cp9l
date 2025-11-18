@@ -17,7 +17,7 @@ export default function Hero() {
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1760764541302-e3955fbc6b2b?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxjZXJhbWljJTIwcG90dGVyeSUyMGhhbmRtYWRlfGVufDB8MHx8fDE3NjM0MTE5NzJ8MA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80')",
+            "url('https://images.unsplash.com/photo-1505839673365-e3971f8d9184?auto=format&fit=crop&w=1600&q=80')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           filter: 'brightness(0.65)'
@@ -31,6 +31,18 @@ export default function Hero() {
           opacity: 0.9,
         }}
       />
+
+      {/* Maldives flag badge */}
+      <div className="absolute top-6 right-6 z-10 flex items-center gap-2 px-3 py-2 rounded-md shadow-lg"
+           style={{ backgroundColor: 'rgba(15,31,75,0.75)', border: `1px solid ${brand.gold}` }}>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg"
+          alt="Maldives Flag"
+          className="h-5 w-7 object-cover rounded-sm"
+          style={{ boxShadow: '0 2px 6px rgba(0,0,0,0.25)' }}
+        />
+        <span className="text-sm font-medium" style={{ color: brand.white }}>Maldives</span>
+      </div>
 
       <div className="relative max-w-7xl mx-auto px-6 py-28 sm:py-36">
         <motion.div
